@@ -1,0 +1,194 @@
+%==========================================================
+% B201 Computer Science Lab - Individual Project Report
+% Eser Menke
+% Written in LaTeX (compiles with pdfLaTeX)
+%==========================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+\definecolor{accent}{HTML}{2B6CB0}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  citecolor=accent
+}
+
+\titleformat{\section}{\large\bfseries\color{accent}}{\thesection.}{0.5em}{}
+\titlespacing{\section}{0pt}{14pt}{6pt}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{10pt}{4pt}
+
+\begin{document}
+
+%========================== TITLE ===========================
+\begin{center}
+  {\large Gisma University of Applied Sciences}\\[2pt]
+  {\normalsize School of Computer Science}\\[14pt]
+  {\Large\bfseries\color{accent} B201 Computer Science Lab}\\[6pt]
+  {\Large\bfseries Computer Science Portfolio Report}\\[14pt]
+  {\normalsize Eser Menke}\\[2pt]
+  {\small Individual Project}\\[2pt]
+  {\small June 2026}
+\end{center}
+
+\vspace{10pt}
+\hrule
+\vspace{14pt}
+
+%======================= INTRODUCTION =======================
+\section{Introduction}
+
+This report is about the computer science portfolio I built for the B201 Computer Science
+Lab module. The task was to create a portfolio that shows my technical skills, as if I were
+applying for a working student position. So I made a personal website that introduces me,
+lists the skills I am starting to learn, and shows a few small projects I have worked on.
+
+I am in my first semester, so I did not try to make the portfolio look like the work of an
+experienced developer. Instead I tried to keep it simple, clear, and honest about where I am
+right now. The two main links for this project are below.
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt, topsep=2pt]
+  \item \textbf{Portfolio website:} \url{https://esermenke.github.io}
+  \item \textbf{GitHub repository:} \url{https://github.com/EserMenke/EserMenke.github.io}
+\end{itemize}
+
+%==================== WEBSITE STRUCTURE =====================
+\section{Structure of the Website}
+
+The website is a single page that you scroll through, with a menu at the top that jumps to
+each part. I chose a single page instead of many separate pages because the portfolio does
+not have a lot of content yet, and one clear page felt easier to read and easier to look
+after. The page is split into these sections:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt, topsep=2pt]
+  \item \textbf{Header / navigation:} my name and a small menu (About, Skills, Projects, CV, Contact).
+  \item \textbf{Hero:} a short line that says who I am, with two buttons.
+  \item \textbf{About:} a short paragraph about me and why I chose software engineering.
+  \item \textbf{Skills:} the languages and tools I have started using, each marked as beginner.
+  \item \textbf{Projects:} the small things I have built so far.
+  \item \textbf{CV:} a button to download my CV as a PDF.
+  \item \textbf{Contact:} my email, GitHub, and LinkedIn.
+\end{itemize}
+
+%================== REPOSITORY STRUCTURE ====================
+\section{Structure of the GitHub Repository}
+
+The code lives in a public GitHub repository. I named the repository
+\texttt{EserMenke.github.io} on purpose, because GitHub Pages uses that name automatically
+to publish the site at \url{https://esermenke.github.io}. The repository is
+organised like this:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt, topsep=2pt]
+  \item \texttt{index.html} \quad the main page with all the sections.
+  \item \texttt{style.css} \quad all of the styling for the page.
+  \item \texttt{cv/} \quad my CV (the PDF and the LaTeX source).
+  \item \texttt{projects/} \quad source files for the exercises shown on the site.
+  \item \texttt{assets/} \quad images and other static files.
+  \item \texttt{README.md} \quad a short explanation of the project.
+\end{itemize}
+
+I kept the styling in its own file instead of writing it inside the HTML, because it keeps
+the page easier to read and easier to change later.
+
+%==================== TOOLS AND TECH ========================
+\section{Tools and Technologies}
+
+I built the site with plain \textbf{HTML} and \textbf{CSS}, and I did not use any JavaScript.
+I made that choice because I am still a beginner, and I wanted to fully understand everything
+on the page rather than copy in code I could not explain. For the structure and the styling I
+used the MDN Web Docs and W3Schools as references when I got stuck (Mozilla, 2024; W3Schools,
+2024). For the text I used the Inter font from Google Fonts (Google Fonts, 2024).
+
+For version control and hosting I used \textbf{Git}, \textbf{GitHub}, and \textbf{GitHub
+Pages}, which let me put the site online for free straight from the repository. My
+\textbf{CV} and this \textbf{report} were both written in \textbf{LaTeX}, which I compiled
+in Overleaf (Overleaf, 2024).
+
+%==================== DESIGN DECISIONS ======================
+\section{Design Decisions}
+
+Since I am still learning, most of my design choices came from small tricks I picked up here
+and there from tutorials and examples, and I tried to use them in a way that made sense for my
+own page. A few of the main choices were:
+
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt, topsep=2pt]
+  \item \textbf{One accent colour.} I used a single blue for links, buttons, and section
+        titles, so the page looks calm and consistent instead of busy.
+  \item \textbf{Cards for skills and projects.} Putting each skill and project in its own
+        box makes the information easier to scan.
+  \item \textbf{Responsive layout with CSS only.} The cards and the menu change to fit smaller
+        screens, so the site still works on a phone.
+  \item \textbf{Honest content.} I marked every skill as beginner and kept the projects small,
+        because I wanted the portfolio to match where I actually am.
+\end{itemize}
+
+I also tried to keep the writing on the site short and plain, so it is easy to read.
+
+%================= STRENGTHS AND WEAKNESSES =================
+\section{Strengths and Weaknesses}
+
+\subsection{Strengths}
+The site is simple and clean, it loads fast, and it works on both computers and phones.
+Because it only uses HTML and CSS, I can explain every part of it, and it is easy to update
+when I learn something new or finish a new project.
+
+\subsection{Weaknesses}
+The site is also quite basic. Without any JavaScript it has no interactive features, the
+design is plain, and the projects are small beginner exercises. These are honest limits of
+being in my first semester, and they are the parts I most want to improve over time.
+
+%======================= REFLECTION =========================
+\section{Reflection}
+
+The part I both enjoyed the most and struggled with the most was the C++ project that I made
+as an example for the portfolio. I really tried to build it well and keep improving it. Even
+installing C++ and getting it set up was a challenge on its own, but the whole journey turned
+out to be pretty fun.
+
+While working on this assignment I also learned several new things. I found out what LaTeX
+actually is and how to use it for my CV and this report, I got my first real experience with
+C++, and I picked up a lot of design ideas while putting the project together.
+
+%==================== FUTURE IMPROVEMENTS ===================
+\section{Future Improvements}
+
+There are a few things I would like to add as I get better. Most of all, I would really love
+to add a smooth, fluid interface to the site, but I have not figured out how to do that yet.
+Beyond that, I want to add more and bigger projects over time, include real screenshots and
+short write-ups for each one, and slowly improve the overall design as my skills grow.
+
+%======================= CONCLUSION =========================
+\section{Conclusion}
+
+This project gave me my first full experience of building something from start to finish:
+designing a website, writing it in HTML and CSS, putting it online with GitHub Pages, and
+documenting it with LaTeX. The result is simple, but it honestly shows where I am as a
+first-year student, and it gives me a base I can keep building on.
+
+%======================= REFERENCES =========================
+\section*{References and Bibliography}
+\addcontentsline{toc}{section}{References and Bibliography}
+\begin{itemize}[leftmargin=1.4em, itemsep=4pt, topsep=4pt, label={}]
+  \item GitHub (2024) \textit{GitHub Pages documentation}. Available at:
+        \url{https://docs.github.com/en/pages} (Accessed: 26 June 2026).
+  \item Google Fonts (2024) \textit{Inter}. Available at:
+        \url{https://fonts.google.com/specimen/Inter} (Accessed: 26 June 2026).
+  \item Mozilla (2024) \textit{HTML: HyperText Markup Language}. MDN Web Docs. Available at:
+        \url{https://developer.mozilla.org/en-US/docs/Web/HTML} (Accessed: 26 June 2026).
+  \item Overleaf (2024) \textit{Learn LaTeX in 30 minutes}. Available at:
+        \url{https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes} (Accessed: 26 June 2026).
+  \item W3Schools (2024) \textit{HTML Tutorial}. Available at:
+        \url{https://www.w3schools.com/html/} (Accessed: 26 June 2026).
+\end{itemize}
+
+\end{document}
