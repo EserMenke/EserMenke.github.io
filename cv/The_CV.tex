@@ -1,0 +1,120 @@
+%==========================================================
+% Eser Menke - Curriculum Vitae
+% Written in LaTeX. Compiles with pdfLaTeX.
+%==========================================================
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}   % clean sans-serif body font
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[margin=2cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+% --- Colours ---
+\definecolor{accent}{HTML}{2B6CB0}
+\definecolor{soft}{HTML}{52606D}
+
+% --- Links ---
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  bookmarks=false
+}
+
+% --- Section formatting ---
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}{}[\vspace{2pt}\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% --- Helper for entries ---
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1} \hfill \textcolor{soft}{#2}\\
+  \textit{#3}\\[2pt]
+  #4
+}
+
+\begin{document}
+
+%========================== HEADER ==========================
+\begin{center}
+  {\Huge\bfseries Eser Menke}\\[6pt]
+  {\large\color{soft} Software Engineering Student}\\[8pt]
+  \small
+  \href{mailto:esermenke1@gmail.com}{esermenke1@gmail.com} \quad\textbar\quad
+  Berlin, Germany \\[2pt]
+  \href{https://github.com/EserMenke}{github.com/EserMenke} \quad\textbar\quad
+  \href{https://www.linkedin.com/in/eser-menke-710482403/}{linkedin.com/in/eser-menke} \quad\textbar\quad
+  \href{https://esermenke.github.io}{esermenke.github.io}
+\end{center}
+
+\vspace{6pt}
+
+%========================== PROFILE =========================
+\section{Profile}
+First-year software engineering student at Gisma University of Applied Sciences. I know the
+basics of Python, C++, and web development, and I like building small projects to understand
+how things work. I am looking for a working student position where I can keep learning and be
+useful to the team.
+
+%========================= EDUCATION ========================
+\section{Education}
+
+\noindent\textbf{Gisma University of Applied Sciences} \hfill \textcolor{soft}{2026 -- Present}\\
+\textit{BSc Software Engineering, Berlin, Germany}\\[3pt]
+Currently in my first year. Studying programming fundamentals, computer science basics, and
+software development.
+
+\vspace{8pt}
+
+\noindent\textbf{High School Diploma} \hfill \textcolor{soft}{2023 -- 2024}
+
+%========================== SKILLS ==========================
+\section{Skills}
+\begin{itemize}[leftmargin=1.2em, itemsep=2pt, topsep=2pt]
+  \item \textbf{Programming:} Python, C++ (basics)
+  \item \textbf{Web:} HTML, CSS
+  \item \textbf{Tools:} Git, GitHub, LaTeX
+\end{itemize}
+
+%========================= LANGUAGES ========================
+\section{Languages}
+\begin{itemize}[leftmargin=1.2em, itemsep=2pt, topsep=2pt]
+  \item \textbf{Turkish:} Native
+  \item \textbf{English:} B2 -- C1
+  \item \textbf{German:} Beginner (currently learning)
+\end{itemize}
+
+%========================= PROJECTS =========================
+\section{Projects}
+
+\noindent\textbf{Portfolio website} \hfill \textcolor{soft}{HTML, CSS}\\
+A personal portfolio site built with HTML and CSS and hosted on GitHub Pages. My first time
+building a full web page and publishing it online.
+
+\vspace{6pt}
+
+\noindent\textbf{Volume button orientation helper} \hfill \textcolor{soft}{C++}\\
+A small C++ program for tablets that moves the volume up and down buttons depending on the
+screen orientation, so they stay in a place that makes sense when the device is rotated.
+
+\vspace{6pt}
+
+\noindent\textbf{``Hello World'' web page} \hfill \textcolor{soft}{HTML}\\
+My first HTML exercise. A single page that shows a message, where I started learning how a
+web page is structured.
+
+%========================= INTERESTS ========================
+\section{Interests}
+Technology, design, communication, and game development.
+
+\end{document}
